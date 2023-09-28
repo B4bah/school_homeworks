@@ -1,4 +1,4 @@
-def Transform(num, base):
+def transform(num, base):
     digits = []
     while num > 0:
         digits.append(num % base)
@@ -9,13 +9,12 @@ def Transform(num, base):
     return list(reversed(digits))
 
 
-def ReTransform(num, base):
+def retransform(num, base):
     product = 0
-    nums = [int(digit) for digit in str(num)]
-    for i in range(len(nums)):
-        digit = len(nums)-i-1
-        product += nums[digit]*base**i
-    #     print(f'product_{digit} = {nums[digit]}*{base}**{i} = {nums[digit]*base**i}')
+    for i in range(len(num)):
+        digit = len(num)-i-1
+        product += num[digit]*base**i
+    #     print(f'product_{digit} = {num[digit]}*{base}**{i} = {num[digit]*base**i}')
     # print(f'product = {product}\n')
     return product
 

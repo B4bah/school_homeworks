@@ -1,7 +1,7 @@
-from transform_funcs import Transform, ReTransform
+from transform_funcs import transform, retransform
 
 for x in range(10):
-    num = ReTransform(int(f'3{x}15{x}'), 15) + ReTransform(123, int(f'3{x}51')) + x**x + \
-          ReTransform(int(f'1{x}3'), int(f'1{x}3')) + ReTransform(int(f'1{x}2'), int(f'{x+1}'))
+    num = retransform([3, x, 1, 5, x], 15) + retransform([1, 2, 3], int(f'3{x}51')) + x**x + \
+          retransform([1, x, 3], int(f'1{x}3')) + retransform([1, x, 2], int(f'{x+1}'))
     if num % 13 == 0:
-        print(Transform(num, 13))
+        print(transform(num, 13))
