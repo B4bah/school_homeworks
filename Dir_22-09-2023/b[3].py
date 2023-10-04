@@ -1,4 +1,4 @@
-from transform_funcs import transform
+from School_homeworks.Funcs.transform_funcs import transform
 
 for x in range(100):
     num = transform(5**2026 + 7*5**1013 + 107 - x, 6)

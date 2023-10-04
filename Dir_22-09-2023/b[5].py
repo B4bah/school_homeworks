@@ -1,4 +1,4 @@
-from transform_funcs import transform, retransform
+from School_homeworks.Funcs.transform_funcs import transform, retransform
 
 for x in range(10):
     num = retransform([3, x, 1, 5, x], 15) + retransform([1, 2, 3], int(f'3{x}51')) + x**x + \

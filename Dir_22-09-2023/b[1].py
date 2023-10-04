@@ -1,4 +1,4 @@
-from transform_funcs import transform
+from School_homeworks.Funcs.transform_funcs import transform
 
 summ = 0
 

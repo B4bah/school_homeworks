@@ -1,4 +1,4 @@
-from transform_funcs import retransform
+from School_homeworks.Funcs.transform_funcs import retransform
 
 for p in range(1, 101):
     for x in range(10):
