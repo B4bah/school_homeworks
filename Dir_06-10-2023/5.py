@@ -1,6 +1,8 @@
 k = 0
 x = 0
 while k < 5:
+    if x == 0:
+        num = int(f'1234576')
     num = int(f'12345{x}76')
     if num % 73 == 0:
         k += 1
