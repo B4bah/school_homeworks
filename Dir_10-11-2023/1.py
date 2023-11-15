@@ -22,20 +22,20 @@ def f_(n: int) -> int:
     else: return 0
 
 
-for i in range(1, 63):
+for i in range(1, 64):
     if f_((6, i)) == -1: print('1)', i); break
 
 k = 0
-for i in range(1, 63):
+for i in range(1, 64):
     if f((6, i)) == 2:
         k += 1
 print('2)', k)
 
-for i in range(63, 1, -1):
+for i in range(63, 0, -1):
     if f_((6, i)) == -1:
-        print('3)', i)
+        print('3)', i + 6)
         break
 
 # 1) 8
 # 2) 3
-# 3) 21
+# 3) 27

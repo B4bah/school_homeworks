@@ -22,12 +22,12 @@ def f_(n: int) -> int:
     else: return 0
 
 
-for i in range(100, 32, -1):
+for i in range(100, 31, -1):
     if f(i) == -1:
         print('1)', i)
         break
 
-for i in range(140, 32, -1):
+for i in range(140, 31, -1):
     if f(i) == 2:
         print('2)', i, end=' ')
         break
@@ -37,7 +37,7 @@ for i in range(32, 100):
         print(i)
         break
 
-for i in range(32, 100):
+for i in range(32, 101):
     if f(i) == -2:
         print('3)', i)
         break
