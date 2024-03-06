@@ -1,4 +1,4 @@
-def transform(num, base):
+def transform(num: int, base: int) -> list[str]:
     digits = []
     while num > 0:
         digits.append(num % base)
@@ -9,7 +9,7 @@ def transform(num, base):
     return list(reversed(digits))
 
 
-def retransform(num, base):
+def retransform(num: list[str], base: int) -> int:
     product = 0
     for i in range(len(num)):
         digit = len(num)-i-1

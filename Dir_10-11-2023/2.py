@@ -1,4 +1,5 @@
 from functools import lru_cache
+from icecream import ic
 
 
 def mov(n: int) -> tuple[int, int, int]:
@@ -23,22 +24,31 @@ def f_(n: int) -> int:
 
 
 for i in range(1, 58):
+
     if f(i) == -1:
-        print('1)', i)
+        ic('1)', i)
         break
 
-print('2) ', end='')
+# print('2) ', end='')
+# k = 0
+# for i in range(1, 58):
+#     if f(i) == 2:
+#         k += 1
+#         print(i, end=' ')
+#         if k == 2: break
+# print()
+
 k = 0
 for i in range(1, 58):
     if f(i) == 2:
         k += 1
-        print(i, end=' ')
+        ic('2) ', i)
         if k == 2: break
-print()
+
 
 for i in range(1, 58):
     if f_(i) == -2:
-        print('3)', i)
+        ic('3)', i)
         break
 
 # 1) 14
